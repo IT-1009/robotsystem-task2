@@ -8,6 +8,6 @@ def cb(message):
     rospy.loginfo(message.data)
 
 if __name__ == '__main__':
-    rospy.init_node('kaa')
-    sub = rospy.Subscriber('kaaer', String, cb)
+    rospy.init_node('receive1')
+    sub = rospy.Subscriber('chatter', String, cb)
     rospy.spin()
