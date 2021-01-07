@@ -9,5 +9,5 @@ def cb(message):
 
 if __name__ == '__main__':
     rospy.init_node('receive1')
-    sub = rospy.Subscriber('chatter', String, cb)
+    sub = rospy.Subscriber('talker', String, cb)
     rospy.spin()
