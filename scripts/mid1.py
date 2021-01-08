@@ -2,11 +2,13 @@
 #SPDX-License-Identifier:GPL-3.0
 #Copyright (C) 2020 Tsubasa Ito.  All rights reserved.
 import rospy
+import random
 from std_msgs.msg import String
 
 n = 0
 display = 0
 time = 0
+rand = 0
 
 def cb(message):
     global n
@@ -26,11 +28,31 @@ if __name__ == '__main__':
             time += 1
             print(time)
         elif n == "See You,Noko":
-            display = "See You :)"
+            display = "See You :) USE Ctrl-D to exit"
             n = 0
             pub.publish(display)
             time += 1
             print(time)
+        elif n == "How about you?":
+            rand = random.randint(0,2)
+            if rand == 0:
+                display = "I'm fine. Thank you!"
+                n = 0
+                pub.publish(display)
+                time += 1
+                print(time)
+            elif rand == 1:
+                display = "I'm so sad... :("
+                n = 0
+                pub.publish(display)
+                time += 1
+                print(time)
+            elif rand == 2:
+                display = "I'm so happy with you. :)"
+                n = 0
+                pub.publish(display)
+                time += 1
+                print(time)
         elif n == 0:
             display = "hello world"
         else:
