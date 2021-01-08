@@ -35,4 +35,4 @@ Ubuntu 20.04LTS
 5.「tuu.py」での入力が「kaa.py」に反映されている、「tuukaa.py」に通信回数が表示されているのを確認する  
 6.「tuu.py」は『CTRL+D』、それ以外は『CTRL+C』で終了する 
 ## ライセンス
-BSD3
+BSD 3-Clause License
