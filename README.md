@@ -30,6 +30,8 @@ https://youtu.be/E8auOL7CZi4
 ・自身のcatkin_ws内のsrcに移動、なければ作成しこのリポジトリのcodeをgit cloneする
 ## 使用方法
 `cd catkin_ws/src/mypkg`
-端末を4つ開き`roscore` `rosrun mypkg reply1.py` `rosrun mypkg mid1.py` `rosrun mypkg receive1.py`を実行する。
+端末を4つ開き`roscore` `rosrun mypkg reply1.py` `rosrun mypkg mid1.py` `rosrun mypkg receive1.py` を実行する。  
+`reply1.py`上で「＞」の後に先ほどの””内の会話パターンを入れてください。
+`receive1.py`でNokoからの返信を見れます。
 ## ライセンス
 BSD 3-Clause License
