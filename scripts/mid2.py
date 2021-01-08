@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
-#SPDX-License-Identifier:GPL-3.0
-#Copyright (C) 2020 Tsubasa Ito.  All rights reserved.
 import rospy
 from std_msgs.msg import String
 
 n = 0
-display = 0
+hell = 0
 time = 0
 
 def cb(message):
@@ -15,28 +13,35 @@ def cb(message):
 pub = rospy.Publisher('talker', String, queue_size=1)
 
 if __name__ == '__main__':
-    rospy.init_node('mid1')
+    rospy.init_node('mid2')
     rate = rospy.Rate(1)
     while not rospy.is_shutdown():
         sub = rospy.Subscriber('chatter', String, cb)
-        if n == "Hello,Noko":
-            display = "Hello,human :)"
+
+        if n == "Hello":
+            hell = "Shit"
             n = 0
-            pub.publish(display)
+            pub.publish(hell)
             time += 1
             print(time)
-        elif n == "See You,Noko":
-            display = "See You :)"
+        elif n == "What_are_you_doing?":
+            hell = "I'm_pooping_now"
             n = 0
-            pub.publish(display)
+            pub.publish(hell)
+            time += 1
+            print(time)
+        elif n == "DIO":
+            hell = "THE WORLD!!!!!"
+            n = 0
+            pub.publish(hell)
             time += 1
             print(time)
         elif n == 0:
-            display = "hello world"
+            hell = 0
         else:
-            display = "error"
+            hell = "hello"
             n = 0
-            pub.publish(display)
+            pub.publish(hell)
             time += 1
             print(time)
         rate.sleep()
