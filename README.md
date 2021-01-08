@@ -29,10 +29,7 @@ Ubuntu 20.04LTS
 ## インストール手順
 ・自身のcatkin_ws内のsrcに移動、なければ作成しこのリポジトリのcodeをgit cloneする
 ## 使用方法
-2.Git clone後、「myROS」ディレクトリに入る  
-3.端末のタブかターミナルを４つに分ける  
-4.それぞれで『roscore』『rosrun mypkg tuu.py』『rosrun mypkg tuukaa.py』『rosrun mypkg kaa.py』を実行する  
-5.「tuu.py」での入力が「kaa.py」に反映されている、「tuukaa.py」に通信回数が表示されているのを確認する  
-6.「tuu.py」は『CTRL+D』、それ以外は『CTRL+C』で終了する 
+`cd catkin_ws/src/mypkg`
+端末を4つ開き`roscore` `rosrun mypkg reply1.py` `rosrun mypkg mid1.py` `rosrun mypkg receive1.py`を実行する。
 ## ライセンス
 BSD 3-Clause License
