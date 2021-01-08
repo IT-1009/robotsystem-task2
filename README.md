@@ -25,7 +25,7 @@ YOU --- "How about you?"　Noko --- "?????"　彼女の返答は３パターン�
 ## 動作環境
 Ubuntu 20.04LTS
 ## デモ動画のリンク
-
+https://youtu.be/E8auOL7CZi4
 ## インストール手順
 ・自身のcatkin_ws内のsrcに移動、なければ作成しこのリポジトリのcodeをgit cloneする
 ## 使用方法
