@@ -3,15 +3,20 @@
 第10回で作成したROSのパッケージをベースに、オリジナリティーある改造をし、GitHubに置くこと。
 ## リポジトリ概要
 ROSを使用し、３つのファイル間で通信しまるで誰かと会話しているように思えるようなパッケージを作成しました。
-'scripts'プログラムがここに入っている。
-・reply1:このパブリッシャにいれた声に対して「Noko」が返信してくれます。
+「scripts」プログラムがここに入っている。
+・reply1:このパブリッシャにいれた声に対して'Noko'が返信してくれます。
 ・mid1.py:このファイルは受け取ったデータから反応を決定し返信を考えるという中間ファイルです。また何回会話したかの回数が表示されます。
-・receive1.py:ここで「Noko」からの返信が見れます。
-### 入力と出力の変化
-"Hello"　　　　　　　　　->　　"Hey Ya!"
-"What are you doing?"　　->　　"I'm pooping now"
-"DIO"　　　　　　　　　　->　　"THE WORLD!!!!!"
-上記以外の入力　　　　　 ->　　"hello"
+・receive1.py:ここで'Noko'からの返信が見れます。
+・count.py・twice.py:授業でやったやつです。countは数値を10hzで出して、twiceはそれを倍にします。
+「CmakeLists.txt」このパッケージにおけるmakefileです。
+「LICENSE」このパッケージにおけるライセンスです。
+「README.md」読んでください。
+「package.xml」パッケージの情報がまとめてあります。
+### 会話パターン
+YOU --- "Hello,Noko"     Noko --- "Hello,human"
+YOU --- "See You,Noko"   Noko --- "See you"＋exit方法を教えてくれます。
+YOU --- "How about you?" Noko --- "?????"　彼女の返答は３パターンあります！Nokoの気分次第ですね…！
+上記以外の入力 "error"
 ## 手順
 1.ROSをインストールしておく
 2.Git clone後、「myROS」ディレクトリに入る
