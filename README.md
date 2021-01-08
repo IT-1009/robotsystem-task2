@@ -17,7 +17,11 @@ YOU --- "Hello,Noko"     Noko --- "Hello,human"
 YOU --- "See You,Noko"   Noko --- "See you"＋exit方法を教えてくれます。
 YOU --- "How about you?" Noko --- "?????"　彼女の返答は３パターンあります！Nokoの気分次第ですね…！
 上記以外の入力 "error"
-## 手順
+## 動作環境
+Ubuntu 20.04LTS
+## デモ動画のリンク
+
+## インストール手順
 1.ROSをインストールしておく
 2.Git clone後、「myROS」ディレクトリに入る
 3.端末のタブかターミナルを４つに分ける
