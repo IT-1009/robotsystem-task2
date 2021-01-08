@@ -27,13 +27,12 @@ Ubuntu 20.04LTS
 ## デモ動画のリンク
 
 ## インストール手順
-1.ROSをインストールしておく  
+・自身のcatkin_ws内のsrcに移動、なければ作成しこのリポジトリのcodeをgit cloneする
+## 使用方法
 2.Git clone後、「myROS」ディレクトリに入る  
 3.端末のタブかターミナルを４つに分ける  
 4.それぞれで『roscore』『rosrun mypkg tuu.py』『rosrun mypkg tuukaa.py』『rosrun mypkg kaa.py』を実行する  
 5.「tuu.py」での入力が「kaa.py」に反映されている、「tuukaa.py」に通信回数が表示されているのを確認する  
-6.「tuu.py」は『CTRL+D』、それ以外は『CTRL+C』で終了する  
-### 注意
-「tuu.py」で入力する際に、入力を""で挟ないとエラーになる  
-例）Hello    ->  エラー  
-　　"Hello"  ->  成功  
+6.「tuu.py」は『CTRL+D』、それ以外は『CTRL+C』で終了する 
+## ライセンス
+BSD3
