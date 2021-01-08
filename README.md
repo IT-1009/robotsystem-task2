@@ -19,7 +19,7 @@ ROSを使用し、３つのファイル間で通信しまるで誰かと会話�
 パッケージの情報がまとめてあります。  
 ### 会話パターン
 YOU --- "Hello,Noko"　Noko --- "Hello,human"  
-YOU --- "See You,Noko"　Noko --- "See you"＋exit方法を教えてくれます。  
+YOU --- "See You,Noko"　Noko --- "See you"　＋exit方法を教えてくれます。  
 YOU --- "How about you?"　Noko --- "?????"　彼女の返答は３パターンあります！Nokoの気分次第ですね…！  
 上記以外の入力 "error"  
 ## 動作環境
